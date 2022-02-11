@@ -45,7 +45,6 @@ public class NettyBootsrapRunner implements ApplicationRunner, ApplicationListen
     }
 
     public void run(ApplicationArguments args) throws Exception {
-
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
