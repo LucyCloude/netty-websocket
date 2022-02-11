@@ -78,7 +78,6 @@ public class NettyBootsrapRunner implements ApplicationRunner, ApplicationListen
                     });
                     pipeline.addLast(new WebSocketServerCompressionHandler());
                     pipeline.addLast(new WebSocketServerProtocolHandler(path, null, true, maxFrameSize));
-
                     /**
                      * 从IOC中获取到Handler
                      */
